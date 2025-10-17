@@ -8,6 +8,7 @@ import CustomZodValidationPipe from './shared/pipes/custom-zod-validation.pipe'
 import { ZodSerializerInterceptor } from 'nestjs-zod'
 import { HttpExceptionFilter } from './shared/filters/http-exception.filter'
 import { CatchEverythingFilter } from './shared/filters/catch-everything.filter'
+import { SharedUserRepository } from './shared/repositories/shared-user.repo'
 
 @Module({
   imports: [SharedModule, AuthModule],
